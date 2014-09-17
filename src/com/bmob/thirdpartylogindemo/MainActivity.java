@@ -28,7 +28,7 @@ public class MainActivity extends Activity implements OnClickListener {
 	String from = "";
 	TextView tv_info;
 
-	Button btn_relation_qq, btn_relation_weibo, btn_logout, btn_remove_all,
+	Button btn_relation_qq, btn_relation_weibo, btn_logout,
 			btn_remove_qq, btn_remove_weibo;
 
 	ImageView iv_back;
@@ -51,8 +51,6 @@ public class MainActivity extends Activity implements OnClickListener {
 		btn_logout = (Button) findViewById(R.id.btn_logout);
 		btn_logout.setOnClickListener(this);
 		// 取消关联
-		btn_remove_all = (Button) findViewById(R.id.btn_remove_all);
-		btn_remove_all.setOnClickListener(this);
 		btn_remove_weibo = (Button) findViewById(R.id.btn_remove_weibo);
 		btn_remove_weibo.setOnClickListener(this);
 		btn_remove_qq = (Button) findViewById(R.id.btn_remove_qq);
@@ -194,34 +192,6 @@ public class MainActivity extends Activity implements OnClickListener {
 	}
 
 	/**
-	 * 取消全部关联
-	 * 
-	 * @Title: dissociateAuthData
-	 * @Description: TODO
-	 * @param
-	 * @return void
-	 * @throws
-	 */
-	private void dissociateAllAuthData() {
-		BmobUser.dissociateAllAuthData(this,
-				BmobUser.getCurrentUser(getApplicationContext()),
-				new UpdateListener() {
-
-					@Override
-					public void onSuccess() {
-						// TODO Auto-generated method stub
-						toast("取消全部关联成功");
-					}
-
-					@Override
-					public void onFailure(int code, String msg) {
-						// TODO Auto-generated method stub
-						toast("取消全部关联失败：code =" + code + ",msg = " + msg);
-					}
-				});
-	}
-
-	/**
 	 * 取消QQ关联
 	 * 
 	 * @Title: dissociateQQAuthData
@@ -307,8 +277,6 @@ public class MainActivity extends Activity implements OnClickListener {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-		} else if (arg0 == btn_remove_all) {
-			dissociateAllAuthData();
 		} else if (arg0 == btn_remove_qq) {
 			dissociateQQAuthData();
 		} else if (arg0 == btn_remove_weibo) {

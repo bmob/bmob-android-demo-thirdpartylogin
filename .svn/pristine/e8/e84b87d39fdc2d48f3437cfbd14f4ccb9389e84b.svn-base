@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.bmob.thirdpartylogindemo.MainActivity" >
+
+    <Button 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="微博账号登陆"
+        android:onClick="onClick"
+        android:id="@+id/btn_weiboLogin"/>
+    
+    <Button 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="QQ账号登陆"
+        android:onClick="onClick"
+        android:id="@+id/btn_qqLogin"/>
+    
+    <Button 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="获取微博账号信息"
+        android:onClick="onClick"
+        android:id="@+id/btn_weiboInfo"/>
+    
+    <Button 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="获取QQ账号信息"
+        android:onClick="onClick"
+        android:id="@+id/btn_qqInfo"/>
+
+</LinearLayout>

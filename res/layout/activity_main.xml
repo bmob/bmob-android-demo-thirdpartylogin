@@ -64,17 +64,6 @@
             android:textSize="16sp" />
 
         <Button
-            android:id="@+id/btn_remove_all"
-            android:layout_width="100dp"
-            android:layout_height="48dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/selector_logout"
-            android:text="取消全部关联"
-            android:textColor="#FFFFFF"
-            android:textSize="14sp" />
-
-        <Button
             android:id="@+id/btn_remove_qq"
             android:layout_width="100dp"
             android:layout_height="48dp"
