@@ -19,8 +19,8 @@ import cn.bmob.v3.listener.SaveListener;
 
 public class LoginActivity extends Activity implements OnClickListener{
 	
-	private String APPID = "7e2f5c55f20f19d97a73a12e0bb2ebd9";//--外网
-//	private String APPID = "e97f215c671442a29b08ebc9d7171117";//--内网
+	private String APPID = "";//--外网
+
 
 	EditText et_account,et_pwd;
 	TextView tv_weibo,tv_qq;
